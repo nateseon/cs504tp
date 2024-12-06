@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verify MFA</title>
+</head>
+
+<body>
+    <h1>Enter the MFA Code</h1>
+    <form action="/verify_mfa" method="post">
+        <input type="hidden" name="username" value="{{ username }}">
+        <label for="mfa_code">MFA Code:</label>
+        <input type="text" id="mfa_code" name="mfa_code" required><br>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+
+</html>
